@@ -1,4 +1,6 @@
 <h1>id: <%= @message.id %>のメッセージ編集ページ</h1>
+<%= render "form", message: @message %>
+
 <%= form_for(@message) do |f| %>
   <%= f.label :content, "メッセージ" %>
   <%= f.text_field :content %>
